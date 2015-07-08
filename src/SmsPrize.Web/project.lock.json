@@ -501,34 +501,6 @@
           "lib/dnx451/Microsoft.AspNet.Mvc.DataAnnotations.dll": {}
         }
       },
-      "Microsoft.AspNet.Mvc.Extensions/6.0.0-beta6-14251": {
-        "dependencies": {
-          "Microsoft.AspNet.Antiforgery": "1.0.0-beta6-10122",
-          "Microsoft.AspNet.Authentication": "1.0.0-beta6-12656",
-          "Microsoft.AspNet.Authorization": "1.0.0-beta6-12656",
-          "Microsoft.AspNet.Cors.Core": "1.0.0-beta6-10647",
-          "Microsoft.AspNet.DataProtection": "1.0.0-beta6-11595",
-          "Microsoft.AspNet.Diagnostics.Abstractions": "1.0.0-beta6-13364",
-          "Microsoft.AspNet.FileProviders.Abstractions": "1.0.0-beta6-11596",
-          "Microsoft.AspNet.JsonPatch": "1.0.0-beta6-14251",
-          "Microsoft.AspNet.Mvc.Core": "6.0.0-beta6-14251",
-          "Newtonsoft.Json": "6.0.6"
-        },
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations",
-          "System.Runtime.Serialization",
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Mvc.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Mvc.Extensions.dll": {}
-        }
-      },
       "Microsoft.AspNet.Mvc.Formatters.Json/6.0.0-beta6-14261": {
         "dependencies": {
           "Microsoft.AspNet.JsonPatch": "1.0.0-beta6-14261",
@@ -1662,29 +1634,6 @@
         },
         "runtime": {
           "lib/dnxcore50/Microsoft.AspNet.Mvc.DataAnnotations.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Mvc.Extensions/6.0.0-beta6-14251": {
-        "dependencies": {
-          "Microsoft.AspNet.Antiforgery": "1.0.0-beta6-10122",
-          "Microsoft.AspNet.Authentication": "1.0.0-beta6-12656",
-          "Microsoft.AspNet.Authorization": "1.0.0-beta6-12656",
-          "Microsoft.AspNet.Cors.Core": "1.0.0-beta6-10647",
-          "Microsoft.AspNet.DataProtection": "1.0.0-beta6-11595",
-          "Microsoft.AspNet.Diagnostics.Abstractions": "1.0.0-beta6-13364",
-          "Microsoft.AspNet.FileProviders.Abstractions": "1.0.0-beta6-11596",
-          "Microsoft.AspNet.JsonPatch": "1.0.0-beta6-14251",
-          "Microsoft.AspNet.Mvc.Core": "6.0.0-beta6-14251",
-          "Newtonsoft.Json": "6.0.6",
-          "System.ComponentModel.Annotations": "4.0.10-beta-23029",
-          "System.Runtime.Serialization.Primitives": "4.0.10-beta-23029",
-          "Microsoft.CSharp": "4.0.0-beta-23029"
-        },
-        "compile": {
-          "lib/dnxcore50/Microsoft.AspNet.Mvc.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/dnxcore50/Microsoft.AspNet.Mvc.Extensions.dll": {}
         }
       },
       "Microsoft.AspNet.Mvc.Formatters.Json/6.0.0-beta6-14261": {
@@ -2989,18 +2938,6 @@
           "lib/dotnet/System.Runtime.Numerics.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.0.10-beta-23029": {
-        "dependencies": {
-          "System.Runtime": "4.0.20-beta-23029",
-          "System.Resources.ResourceManager": "4.0.0-beta-23029"
-        },
-        "compile": {
-          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
-        }
-      },
       "System.Security.Claims/4.0.0-beta-23107": {
         "dependencies": {
           "System.Runtime": "4.0.20-beta-23107",
@@ -3759,20 +3696,6 @@
         "lib/dnx451/Microsoft.AspNet.Mvc.DataAnnotations.xml",
         "lib/dnxcore50/Microsoft.AspNet.Mvc.DataAnnotations.dll",
         "lib/dnxcore50/Microsoft.AspNet.Mvc.DataAnnotations.xml"
-      ]
-    },
-    "Microsoft.AspNet.Mvc.Extensions/6.0.0-beta6-14251": {
-      "serviceable": true,
-      "sha512": "1l0AJIsGQQxRcy5FxNpOH05l0aJ73M4cUg/NFoor9vp2u5yVt1MxiuQNVlNlbuXrzqZEqlMypG09GZWdQg2vqA==",
-      "files": [
-        "Microsoft.AspNet.Mvc.Extensions.6.0.0-beta6-14251.nupkg",
-        "Microsoft.AspNet.Mvc.Extensions.6.0.0-beta6-14251.nupkg.sha512",
-        "Microsoft.AspNet.Mvc.Extensions.nuspec",
-        "repo.json",
-        "lib/dnx451/Microsoft.AspNet.Mvc.Extensions.dll",
-        "lib/dnx451/Microsoft.AspNet.Mvc.Extensions.xml",
-        "lib/dnxcore50/Microsoft.AspNet.Mvc.Extensions.dll",
-        "lib/dnxcore50/Microsoft.AspNet.Mvc.Extensions.xml"
       ]
     },
     "Microsoft.AspNet.Mvc.Formatters.Json/6.0.0-beta6-14261": {
@@ -5558,29 +5481,6 @@
         "ref/wpa81/_._"
       ]
     },
-    "System.Runtime.Serialization.Primitives/4.0.10-beta-23029": {
-      "serviceable": true,
-      "sha512": "rSvYF+/KNdGlukMkI/KYQkskUjJESbQmsbbI5oamzwXPMc9oZokt/fGC9hVeX+tQVLBs35epdS6S6prgRH7HpQ==",
-      "files": [
-        "System.Runtime.Serialization.Primitives.4.0.10-beta-23029.nupkg",
-        "System.Runtime.Serialization.Primitives.4.0.10-beta-23029.nupkg.sha512",
-        "System.Runtime.Serialization.Primitives.nuspec",
-        "lib/dotnet/System.Runtime.Serialization.Primitives.dll",
-        "lib/net46/_._",
-        "ref/dotnet/System.Runtime.Serialization.Primitives.dll",
-        "ref/dotnet/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet/de/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet/es/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet/fr/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet/it/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet/ja/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet/ko/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet/ru/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet/zh-hans/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet/zh-hant/System.Runtime.Serialization.Primitives.xml",
-        "ref/net46/_._"
-      ]
-    },
     "System.Security.Claims/4.0.0-beta-23107": {
       "serviceable": true,
       "sha512": "fqA+BJ1s+ttrDk4RI73I7RvPNEIvjZ6yizmawtD1YyLHkSbaAgYGvuMPXQ7zqJreJ/VprSYiDxbczzJfVOE/pQ==",
@@ -6168,8 +6068,7 @@
       "Microsoft.AspNet.Server.IIS >= 1.0.0-*",
       "Microsoft.AspNet.Server.WebListener >= 1.0.0-*",
       "Microsoft.AspNet.StaticFiles >= 1.0.0-*",
-      "Microsoft.Framework.ConfigurationModel.Json >= 1.0.0-*",
-      "Microsoft.AspNet.Mvc.Extensions >= 6.0.0-*"
+      "Microsoft.Framework.ConfigurationModel.Json >= 1.0.0-*"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []

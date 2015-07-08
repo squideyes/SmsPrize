@@ -16,12 +16,9 @@ namespace SmsPrize.Web.Services
 
         public CubeConfig RandomCube()
         {
-            var size = R.Next(200, 400);
-
             var cube = new CubeConfig
             {
-                Width = size,
-                Height = size,
+                Scale = Configuration.Get<double>("Scale")
             };
 
             for (var i = 0; i < 12; i++)

@@ -6,8 +6,7 @@ namespace SmsPrize.Web.Models
     public class CubeConfig
     {
         public IList<CubePlaneConfig> Planes { get; set; } = new List<CubePlaneConfig>();
-        public int Width { get; set; }
-        public int Height { get; set; }
+        public double Scale { get; set; }
 
         public class CubePlaneConfig
         {

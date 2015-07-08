@@ -64,7 +64,5 @@ function triggerUpdate() {
             planeDiv.css('color', plane.TextColor);
             planeDiv.html(plane.Text);
         }
-
-        // update cube size
     });
 }

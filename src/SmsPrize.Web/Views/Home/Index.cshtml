@@ -1,4 +1,121 @@
-﻿<div class="controls">
+﻿@model SmsPrize.Web.Models.CubeConfig
+@{
+    var scaledCube = (Model.Scale * 100) + "px";
+    var scaledRing = (Model.Scale * 380) + "px";
+    var scaledPlane = (Model.Scale * 200) + "px";
+}
+<style>    
+    .plane{
+        height: @scaledPlane;
+        width: @scaledPlane;
+        line-height: @scaledPlane;
+    }
+    /* ---------- cube styles ------------- */
+    .cube > .one {
+        opacity: 0.5;
+        -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(@scaledCube);
+    }
+
+    .cube > .two {
+        opacity: 0.5;
+        -webkit-transform: scale3d(1.2, 1.2, 1.2) translateZ(@scaledCube);
+    }
+
+    .cube > .three {
+        opacity: 0.5;
+        -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(@scaledCube);
+    }
+
+    .cube > .four {
+        opacity: 0.5;
+        -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(@scaledCube);
+    }
+
+    .cube > .five {
+        opacity: 0.5;
+        -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(-90deg) translateZ(@scaledCube);
+    }
+
+    .cube > .six {
+        opacity: 0.5;
+        -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(@scaledCube) rotate(180deg);
+    }
+
+
+    .cube > .seven {
+        -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(90deg) translateZ(@scaledCube) rotate(180deg);
+    }
+
+    .cube > .eight {
+        -webkit-transform: scale3d(0.8, 0.8, 0.8) translateZ(@scaledCube);
+    }
+
+    .cube > .nine {
+        -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(90deg) translateZ(@scaledCube);
+    }
+
+    .cube > .ten {
+        -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(180deg) translateZ(@scaledCube);
+    }
+
+    .cube > .eleven {
+        -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(-90deg) translateZ(@scaledCube);
+    }
+
+    .cube > .twelve {
+        -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(-90deg) translateZ(@scaledCube);
+    }
+
+    /* ---------- ring styles ------------- */
+    .ring > .one {
+        -webkit-transform: translateZ(@scaledRing);
+    }
+
+    .ring > .two {
+        -webkit-transform: rotateY(30deg) translateZ(@scaledRing);
+    }
+
+    .ring > .three {
+        -webkit-transform: rotateY(60deg) translateZ(@scaledRing);
+    }
+
+    .ring > .four {
+        -webkit-transform: rotateY(90deg) translateZ(@scaledRing);
+    }
+
+    .ring > .five {
+        -webkit-transform: rotateY(120deg) translateZ(@scaledRing);
+    }
+
+    .ring > .six {
+        -webkit-transform: rotateY(150deg) translateZ(@scaledRing);
+    }
+
+    .ring > .seven {
+        -webkit-transform: rotateY(180deg) translateZ(@scaledRing);
+    }
+
+    .ring > .eight {
+        -webkit-transform: rotateY(210deg) translateZ(@scaledRing);
+    }
+
+    .ring > .nine {
+        -webkit-transform: rotateY(-120deg) translateZ(@scaledRing);
+    }
+
+    .ring > .ten {
+        -webkit-transform: rotateY(-90deg) translateZ(@scaledRing);
+    }
+
+    .ring > .eleven {
+        -webkit-transform: rotateY(300deg) translateZ(@scaledRing);
+    }
+
+    .ring > .twelve {
+        -webkit-transform: rotateY(330deg) translateZ(@scaledRing);
+    }
+</style>
+<div class="controls">
     <h1>Animations, Transitions and 3D Transforms</h1>
     <p>
         This demo shows some more interesting content using 3D transforms, animations and transitions.
@@ -35,7 +152,7 @@
     </div>
 </div>
 <script>
-    $( document ).ready(function() {
+    $(document).ready(function () {
         triggerUpdate();
     });
 </script>
