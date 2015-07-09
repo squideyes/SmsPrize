@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.AspNet.Mvc;
-using SmsPrize.Web.Models;
+﻿using Microsoft.AspNet.Mvc;
 using SmsPrize.Web.Services;
 
 namespace SmsPrize.Web

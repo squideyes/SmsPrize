@@ -32,22 +32,12 @@ function toggleShape() {
         removeClassName(shape, 'cube');
         addClassName(shape, 'ring');
     }
-
-    // Move the ring back in Z so it's not so in-your-face.
     var stage = document.getElementById('stage');
+
     if (hasClassName(shape, 'ring'))
         stage.style.webkitTransform = 'translateZ(-200px)';
     else
         stage.style.webkitTransform = '';
-}
-
-function toggleBackfaces() {
-    var backfacesVisible = document.getElementById('backfaces').checked;
-    var shape = document.getElementById('shape');
-    if (backfacesVisible)
-        addClassName(shape, 'backfaces');
-    else
-        removeClassName(shape, 'backfaces');
 }
 
 function triggerUpdate() {
@@ -56,7 +46,6 @@ function triggerUpdate() {
             console.log("Invalid cube config.");
             return;
         }
-
         for (i = 0; i < 12; i++) {
             var plane = result.Planes[i];
             var planeDiv = $('#shape div:nth-child(' + (i+1) + ')');

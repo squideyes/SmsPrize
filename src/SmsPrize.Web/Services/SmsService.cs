@@ -6,7 +6,8 @@ namespace SmsPrize.Web.Services
 {
     public class SmsService
     {
-        private static Random R { get; set; } = new Random();
+        private static Random Random { get; } = new Random();
+
         private IConfiguration Configuration { get; set; }
 
         public SmsService(IConfiguration configuration)
@@ -22,9 +23,7 @@ namespace SmsPrize.Web.Services
             };
 
             for (var i = 0; i < 12; i++)
-            {
                 cube.Planes.Add(RandomCubePlane());
-            }
 
             return cube;
         }
@@ -33,10 +32,14 @@ namespace SmsPrize.Web.Services
         {
             var plane = new CubeConfig.CubePlaneConfig
             {
-                Text = R.Next(1, 99).ToString(),
-                FontSize = R.Next(50, 150).ToString()+"pt",
-                TextColor = "#" + R.Next(1, 255).ToString("X2") + R.Next(1, 255).ToString("X2") + R.Next(1, 255).ToString("X2")
+                Text = Random.Next(1, 99).ToString(),
+                FontSize = Random.Next(50, 150).ToString()+"pt",
+                TextColor = "#" + 
+                    Random.Next(1, 255).ToString("X2") + 
+                    Random.Next(1, 255).ToString("X2") + 
+                    Random.Next(1, 255).ToString("X2")
             };
+
             return plane;
         }
     }

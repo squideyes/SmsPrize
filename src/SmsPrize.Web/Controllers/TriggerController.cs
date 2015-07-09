@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.AspNet.Mvc;
-using SmsPrize.Web.Models;
+﻿using Microsoft.AspNet.Mvc;
 using SmsPrize.Web.Services;
 
 namespace SmsPrize.Web
@@ -8,6 +6,7 @@ namespace SmsPrize.Web
     public class TriggerController : Controller
     {
         private SmsService SmsService { get; set; }
+
         public TriggerController(SmsService smsService)
         {
             SmsService = smsService;
@@ -20,6 +19,7 @@ namespace SmsPrize.Web
             try
             {
                 var result = SmsService.RandomCube();
+
                 return Json(result);
             }
             catch
