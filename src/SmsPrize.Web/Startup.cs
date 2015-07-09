@@ -20,6 +20,7 @@ namespace SmsPrize.Web
         public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
         {
             var configPath = Path.Combine(appEnv.ApplicationBasePath, "..", "..");
+
             Configuration = new Configuration(configPath).AddJsonFile("config.json").AddEnvironmentVariables("SmsPrize_");
         }
 
